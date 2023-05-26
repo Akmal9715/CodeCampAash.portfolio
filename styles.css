@@ -1,62 +1,64 @@
-@media only screen and (max-width: 600px) {
+/* Styles for small devices (e.g., phones) */
+@media (max-width: 576px) {
   body {
-    background-color: blue;
+    background-color: rgb(19, 11, 33);
+    color: darkgray;
   }
 }
 
-
-body {
-  margin: 0;
+/* Reset the margin of the body element */
+body { background-color: whitesmoke;
+  color: black;
 }
-
+/* Set the container to display as a flex container with centered alignment */
 .container {
   display: flex;
   align-items: center;
 }
 
-
-
+/* Style for the my-photo element */
 #my-photo {
   float: left;
-  margin: 20px; /* Adjust the spacing as needed */
+  margin: auto; /* Adjust the spacing as needed */
   margin-bottom: 600px; /* Adjust the margin-top value as needed */
   width: 200px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  border: 2px solid #000; /* Adjust the border width and color as needed */
+  border: 20px solid #000; /* Adjust the border width and color as needed */
+  object-fit: cover;
 }
 
-
-
+/* Style for the instagram-link element */
 .instagram-link {
   position: absolute;
-  bottom: 215;
+  bottom: 170;
   margin-bottom: 3000px; /* Adjust the margin-top value as needed */
-  right: 1120;
+  right: 1110;
   margin: 20px;
 }
+#instagram-logo {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
 
-
+/* Style for the text-container element */
 .text-container {
   flex: 1;
   margin-top: -115px; /* Adjust the margin-top value as needed */
-  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+  background: linear-gradient(to bottom right, #261535, #261535);
 }
 
-
-
-
-
+/* Style for the navbar element */
 #navbar {
   position: fixed;
   top: 0px;
   width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   background: #77488f;
 }
 
+/* Style for the links within the navbar */
 #navbar a {
   text-decoration: none;
   display: block;
@@ -66,17 +68,18 @@ body {
   color: white;
 }
 
+/* Style for the links within the navbar on hover */
 #navbar a:hover {
   background: #70f8cd;
 }
 
-
-
+/* Style for the main element */
 main {
   display: grid;
   grid-template-rows: 100vh auto 300px 100px;
 }
 
+/* Style for the welcome-section element */
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -85,10 +88,14 @@ main {
   margin-top: 70px;
   margin-left: 10px;
 }
+
+/* Style for the article element */
 article {
   border: 2px solid #ccc;
   padding: 20px;
 }
+
+/* Style for the about-me element */
 #about-me {
   display: flex;
   justify-content: flex-end;
@@ -98,28 +105,33 @@ article {
   margin-left: auto;
 }
 
+/* Style for the h2 elements */
 h2 {
   font-size: 24px;
   text-align: center;
 }
 
+/* Style for the p elements */
 p {
   font-size: 18px;
   line-height: 1.5;
 }
 
+/* Style for the projects element */
 #projects {
   text-align: center;
 }
 
+/* Style for the profile element */
 #profile {
   text-align: center;
-  background: rgb(125, 206, 247);;
+  background: rgb(19, 11, 33);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
+/* Style for the circle element */
 .circle {
   background: grey;
   border-radius: 50%;
@@ -130,30 +142,35 @@ p {
   line-height: 100px;
 }
 
+/* Style for the profile-link element */
 #profile-link {
   text-decoration: none;
   color: black;
   font-size: 1.2em;
 }
 
+/* Style for the copyright element */
 #copyright {
   text-align: center;
-  background: #6ec6ef;
+  background: rgb(19, 11, 33);
   background: #77488f;
   padding: 1em;
 }
 
+/* Style for the tiles element */
 .tiles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 
+/* Style for the project-tile element */
 .project-tile {
   background: whitesmoke;
   padding: 2em;
 }
 
+/* Style for the links within the project-tile element */
 .project-tile a {
   text-decoration: none;
   color: grey;
@@ -161,21 +178,20 @@ p {
   font-size: 0.9em;
 }
 
+/* Style for the responsive class */
 .responsive {
   max-width: 100%;
   height: auto;
 }
 
-@media all and (max-width: 800px) {
-  #navbar {
-    justify-content: space-around;
-  }
-
-  .tiles {
-    grid-template-columns: 1fr 1fr;
+/* Styles for medium devices (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  body {
+    background-color: gray;
+    color: white;
   }
 }
-
+/* Media query for screens with a max-width of 600px */
 @media all and (max-width: 600px) {
   #navbar {
     flex-flow: column wrap;
@@ -195,5 +211,13 @@ p {
 
   .tiles {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for large devices (e.g., laptops, desktops) */
+@media (min-width: 573px) {
+  body {
+    background-color: rgb(19, 11, 33);
+    color: white;
   }
 }
