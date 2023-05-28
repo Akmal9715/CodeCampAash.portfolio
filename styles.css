@@ -1,14 +1,23 @@
-/* Styles for small devices (e.g., phones) */
-@media (max-width: 576px) {
-  body {
-    background-color: rgb(19, 11, 33);
-    color: darkgray;
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., mobile phones) */
+
+  .container {
+    flex-direction: column;
+  }
+
+  .photo-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    margin-bottom: 20px;
   }
 }
 
 /* Reset the margin of the body element */
 body { background-color: whitesmoke;
-  color: black;
+  color: rgb(244, 235, 235);
 }
 /* Set the container to display as a flex container with centered alignment */
 .container {
@@ -30,10 +39,11 @@ body { background-color: whitesmoke;
 /* Style for the instagram-link element */
 .instagram-link {
   position: absolute;
-  bottom: 170;
+  bottom: 130;
   margin-bottom: 3000px; /* Adjust the margin-top value as needed */
-  right: 1110;
+  right: 1100;
   margin: 20px;
+  color: white;
 }
 #instagram-logo {
   width: 30px; /* Adjust the width as needed */
@@ -44,7 +54,7 @@ body { background-color: whitesmoke;
 .text-container {
   flex: 1;
   margin-top: -115px; /* Adjust the margin-top value as needed */
-  background: linear-gradient(to bottom right, #261535, #261535);
+  background: linear-gradient(to bottom right, rgb(19, 11, 33), rgb(19, 11, 33));
 }
 
 /* Style for the navbar element */
@@ -107,13 +117,13 @@ article {
 
 /* Style for the h2 elements */
 h2 {
-  font-size: 24px;
+  font-size: 35px;
   text-align: center;
 }
 
 /* Style for the p elements */
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -221,3 +231,4 @@ p {
     color: white;
   }
 }
+
