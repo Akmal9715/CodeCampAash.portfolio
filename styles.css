@@ -1,20 +1,11 @@
-@media screen and (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px (e.g., mobile phones) */
-
-  .container {
-    flex-direction: column;
-  }
-
-
-  .text-container {
-    margin-bottom: 20px;
-  }
-}
-
 /* Reset the margin of the body element */
-body { background-color: whitesmoke;
+body {
+  background-color: whitesmoke;
   color: rgb(244, 235, 235);
+  margin: 0;
+  padding: 0;
 }
+
 /* Set the container to display as a flex container with centered alignment */
 .container {
   display: flex;
@@ -24,15 +15,15 @@ body { background-color: whitesmoke;
 /* Style for the instagram-link element */
 .instagram-link {
   position: absolute;
-  bottom: -90px;
-  margin-bottom: 2800px; /* Adjust the margin-top value as needed */
+  bottom: -140px;
   right: 20px;
   margin: 20px;
-  
 }
+
 .text-color {
   color: whitesmoke;
 }
+
 .img-instagram {
   float: left;
   margin-left: 75px;
@@ -40,16 +31,13 @@ body { background-color: whitesmoke;
   height: 60px;
 }
 
-#instagram-logo {
-  width: 70px; /* Adjust the width as needed */
-  height: 70px; /* Adjust the height as needed */
-}
-
 /* Style for the text-container element */
 .text-container {
   flex: 1;
-  margin-top: -115px; /* Adjust the margin-top value as needed */
+  margin-top: 20px;
   background: linear-gradient(to bottom right, rgb(19, 11, 33), rgb(19, 11, 33));
+  padding: 20px;
+  font-size: 18px; /* Adjust the font size as desired */
 }
 
 /* Style for the navbar element */
@@ -78,12 +66,6 @@ body { background-color: whitesmoke;
   background: #70f8cd;
 }
 
-/* Style for the main element */
-main {
-  display: grid;
-  grid-template-rows: 100vh auto 300px 100px;
-}
-
 /* Style for the welcome-section element */
 #welcome-section {
   display: flex;
@@ -92,48 +74,20 @@ main {
   justify-content: flex-start;
   margin-top: 70px;
   margin-left: 10px;
-}
-
-/* Style for the article element */
-article {
-  border: 2px solid #ccc;
   padding: 20px;
-}
-
-/* Style for the about-me element */
-#about-me {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: 0;
-  margin-right: 10px;
-  margin-left: auto;
-}
-
-/* Style for the h2 elements */
-h2 {
-  font-size: 35px;
-  text-align: center;
-}
-
-/* Style for the p elements */
-p {
-  font-size: 20px;
-  line-height: 1.5;
 }
 
 /* Style for the projects element */
 #projects {
   text-align: center;
-} 
+  padding: 20px;
+}
 
 /* Style for the profile element */
 #profile {
   text-align: center;
   background: rgb(19, 11, 33);
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  padding: 20px;
 }
 
 /* Style for the circle element */
@@ -142,10 +96,12 @@ p {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+
 
 /* Style for the profile-link element */
 #profile-link {
@@ -159,7 +115,7 @@ p {
   text-align: center;
   background: rgb(19, 11, 33);
   background: #77488f;
-  padding: 1em;
+  padding: 2em;
 }
 
 /* Style for the tiles element */
@@ -167,12 +123,13 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  gap: 20px;
 }
 
 /* Style for the project-tile element */
 .project-tile {
   background: whitesmoke;
-  padding: 2em;
+  padding: 3em;
 }
 
 /* Style for the links within the project-tile element */
@@ -189,13 +146,54 @@ p {
   height: auto;
 }
 
-/* Styles for medium devices (e.g., tablets) */
-@media (min-width: 577px) and (max-width: 992px) {
-  body {
-    background-color: gray;
-    color: white;
+/* Styles for screens with a maximum width of 768px (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+  /* Styles for .container */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Styles for .text-container */
+  .text-container {
+    margin-bottom: 20px;
+  }
+
+  /* Styles for .instagram-link */
+  .instagram-link {
+    position: static;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Styles for .text-color */
+  .text-color {
+    color: inherit;
+  }
+
+  /* Styles for .img-instagram */
+  .img-instagram {
+    float: none;
+    margin: 0;
+  }
+
+  /* Styles for #navbar */
+  #navbar {
+    justify-content: center;
+  }
+
+  /* Styles for #navbar a */
+  #navbar a {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+
+  /* Styles for .circle */
+  .circle {
+    margin: 0 auto;
   }
 }
+
 /* Media query for screens with a max-width of 600px */
 @media all and (max-width: 600px) {
   #navbar {
@@ -216,6 +214,14 @@ p {
 
   .tiles {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for medium devices (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  body {
+    background-color: gray;
+    color: white;
   }
 }
 
