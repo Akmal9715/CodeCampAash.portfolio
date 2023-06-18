@@ -12,23 +12,28 @@ body {
   align-items: center;
 }
 
-/* Style for the instagram-link element */
+/* Style for the Instagram logo */
+.instagram-logo {
+  position: absolute;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0.1); /* Adjust the scale value as desired */
+  margin-left: 1130px; /* Adjust the margin-left value to move it to the left */
+  margin-top: 220px; /* Adjust the margin-top value to move it down */
+}
+
+/* Style for the Instagram link */
 .instagram-link {
   position: absolute;
   bottom: -140px;
   right: 20px;
   margin: 20px;
+  font-size: 18px; /* Adjust the font-size value as desired */
 }
 
 .text-color {
   color: whitesmoke;
-}
-
-.img-instagram {
-  float: left;
-  margin-left: 75px;
-  width: 60px;
-  height: 60px;
 }
 
 /* Style for the text-container element */
@@ -81,6 +86,9 @@ body {
 #projects {
   text-align: center;
   padding: 20px;
+}
+#project-link {
+  color: white;
 }
 
 /* Style for the profile element */

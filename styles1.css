@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Paragraph styles */
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Unordered list styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styles */
+li {
+  margin-bottom: 10px;
+}
+
+/* Video container styles */
+.video {
+  margin-bottom: 20px;
+}
