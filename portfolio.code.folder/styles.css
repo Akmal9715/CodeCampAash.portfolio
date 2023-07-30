@@ -12,25 +12,64 @@ body {
   align-items: center;
 }
 
-/* Style for the Instagram logo */
-.instagram-logo {
-  position: absolute;
-  margin-left: 10px;
-  width: 10px;
-  height: 10px;
-  transform: scale(0.1); /* Adjust the scale value as desired */
-  margin-left: 1130px; /* Adjust the margin-left value to move it to the left */
-  margin-top: 220px; /* Adjust the margin-top value to move it down */
+/* Style for the container that holds the image */
+.pro-image-container {
+  top: 40px; /* Adjust the top value as needed */
+  right: 50px; /* Adjust the right value as needed */
 }
 
-/* Style for the Instagram link */
-.instagram-link {
-  position: absolute;
-  bottom: -140px;
-  right: 20px;
-  margin: 20px;
-  font-size: 18px; /* Adjust the font-size value as desired */
+/* Style for the image */
+.pro-image-container img {
+  width: 300px; /* Set the width of the image */
+  height: auto; /* Allow the height to adjust proportionally */
+  border-radius: 10px; /* Add a rounded border to the image */
 }
+
+/* Style for the description text */
+.image-description {
+  margin-top: 20px; /* Adjust this value as needed to create space between the image and description */
+  color: #555; /* Set the text color */
+  font-size: 16px; /* Set the font size for the description */
+  line-height: 1.6; /* Set the line height for better readability */
+}
+/* Style for the container that holds the Instagram button and text */
+.instagram-container {
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack child elements in a column */
+  align-items: center; /* Center items horizontally within the container */
+  justify-content: center; /* Center items vertically within the container */
+  margin-top: 350px; /* Add some margin at the top to create space */
+}
+
+/* Style for the Instagram follow button */
+.instagram-button {
+  display: flex; /* Use flexbox to align the logo and text horizontally */
+  align-items: center; /* Center the logo and text horizontally */
+  background-color: #77488f;; /* Set the background color of the button */
+  color: white; /* Set the text color to white */
+  padding: 10px 20px; /* Add padding to the button */
+  border-radius: 25px; /* Create a rounded border for the button */
+  text-decoration: none; /* Remove the default text underline */
+  font-weight: bold; /* Set the font weight to bold */
+  font-size: 16px; /* Set the font size */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+/* Style for the Instagram follow button on hover */
+.instagram-button:hover {
+  background-color: #77488f; /* Change the background color on hover */
+}
+
+/* Style for the Instagram logo */
+.instagram-logo {
+  width: 24px; /* Set the width of the logo image */
+  height: 24px; /* Set the height of the logo image */
+  margin-right: 8px; /* Add some spacing between the logo and text */
+}
+
+
+
+
 
 .text-color {
   color: whitesmoke;
@@ -166,24 +205,13 @@ body {
     margin-bottom: 20px;
   }
 
-  /* Styles for .instagram-link */
-  .instagram-link {
-    position: static;
-    margin: 0;
-    margin-top: 20px;
-    text-align: center;
-  }
 
   /* Styles for .text-color */
   .text-color {
     color: inherit;
   }
 
-  /* Styles for .img-instagram */
-  .img-instagram {
-    float: none;
-    margin: 0;
-  }
+
 
   /* Styles for #navbar */
   #navbar {

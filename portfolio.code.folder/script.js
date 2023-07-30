@@ -90,3 +90,20 @@ trie.add('apply');
 console.log(trie.isWord('apple')); // true
 console.log(trie.isWord('app')); // false
 console.log(trie.print()); // ['apple', 'application', 'apply']
+
+
+// JavaScript code to handle the slide-in effect
+const header = document.querySelector('.header');
+const fixedImage = document.querySelector('.header img');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const slideThreshold = 100; // Adjust this value to control when the image starts sliding in
+
+  if (scrollTop > slideThreshold) {
+    header.style.height = fixedImage.offsetHeight + 'px';
+  } else {
+    header.style.height = 0;
+  }
+});
+
