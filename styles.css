@@ -15,7 +15,7 @@ body {
 /* Style for the container that holds the image */
 .pro-image-container {
   top: 40px; /* Adjust the top value as needed */
-  right: 50px; /* Adjust the right value as needed */
+  right: 10px; /* Adjust the right value as needed */
 }
 
 /* Style for the image */
@@ -24,6 +24,7 @@ body {
   height: auto; /* Allow the height to adjust proportionally */
   border-radius: 10px; /* Add a rounded border to the image */
 }
+
 
 /* Style for the container that holds the Instagram button and text */
 .instagram-container {
