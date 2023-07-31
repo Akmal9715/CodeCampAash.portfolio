@@ -25,13 +25,6 @@ body {
   border-radius: 10px; /* Add a rounded border to the image */
 }
 
-/* Style for the description text */
-.image-description {
-  margin-top: 20px; /* Adjust this value as needed to create space between the image and description */
-  color: #555; /* Set the text color */
-  font-size: 16px; /* Set the font size for the description */
-  line-height: 1.6; /* Set the line height for better readability */
-}
 /* Style for the container that holds the Instagram button and text */
 .instagram-container {
   display: flex; /* Use flexbox to align items */
