@@ -90,6 +90,3 @@ trie.add('apply');
 console.log(trie.isWord('apple')); // true
 console.log(trie.isWord('app')); // false
 console.log(trie.print()); // ['apple', 'application', 'apply']
-
-
-
